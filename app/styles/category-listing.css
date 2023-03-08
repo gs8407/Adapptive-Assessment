@@ -1,0 +1,125 @@
+.listing-boxes {
+  width: 90%;
+  margin: 60px auto;
+}
+
+.listing-boxes__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.top-bar h4 {
+  margin: 0;
+}
+
+.listing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.listing a.listing-box {
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  position: relative;
+}
+
+.listing a.listing-box span,
+.mobile-listing a.listing-box span {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.listing a.listing-box span img,
+.mobile-listing a.listing-box span img {
+  display: inline-block;
+  height: 12px;
+  margin-left: 3px;
+  transition: all 0.2s ease-in;
+}
+
+.listing a.listing-box:hover span img,
+.mobile-listing a.listing-box:hover span img {
+  transition: all 0.2s ease-out;
+  margin-left: 25px;
+}
+
+.listing a.listing-box:nth-child(5n + 1) {
+  grid-column: span 2;
+}
+
+.mobile-listing a.listing-box {
+  display: block;
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.slick-list {
+  padding: 0;
+}
+
+.slick-next {
+  right: 0
+}
+
+.slick-prev,
+.slick-next {
+  width: 57px;
+  height: 100px;
+}
+
+.slick-prev:before {
+  content: url(img/slider-left.png);
+}
+
+.slick-next:before {
+  content: url(img/slider-right.png);
+}
+
+.slick-prev {
+  left: 0;
+  z-index: 100;
+}
+
+a.button-all-cat-mobile {
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  transition: all 0.2s ease-in-out;
+  margin: 35px 0 35px;
+  display: block;
+}
+
+a.button-all-cat-mobile:hover {
+  background-color: transparent;
+  border-color: #000;
+  transition: all 0.2s ease-in-out;
+}
