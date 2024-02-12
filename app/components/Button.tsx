@@ -9,7 +9,7 @@ type ButtonProps = {
 function Button({ title, url, type }: ButtonProps) {
   return (
     <Link className={type} to={url}>
-      {title}
+      {title} 123
     </Link>
   );
 }
